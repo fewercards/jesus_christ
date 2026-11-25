@@ -1,35 +1,63 @@
 # JesusChrist
 
-TODO: Delete this and the text below, and describe your gem
+> *"This code is protected by Jesus Christ."*
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/jesus_christ`. To experiment with that code, run `bin/console` for an interactive prompt.
+Provides prayers, scripture blessings, and spiritual protection helpers for Ruby and Ruby on Rails applications.
 
 ## Installation
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
+Add this line to your application's `Gemfile`:
 
-Install the gem and add to the application's Gemfile by executing:
-
-```bash
-bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+```ruby
+gem "jesus_christ"
 ```
 
-If bundler is not being used to manage dependencies, install the gem by executing:
+And then execute:
 
 ```bash
-gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+bundle install
+```
+
+Or install it directly:
+
+```bash
+gem install jesus_christ
 ```
 
 ## Usage
 
-TODO: Write usage instructions here
+### Protection & Exception Handling
+```ruby
+require "jesus_christ"
 
-## Development
+# Print the protection banner
+JesusChrist.protect!
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+# Wrap risky code blocks
+JesusChrist.take_the_wheel do
+  # risky operation
+end
+```
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+### Prayers & Blessings
+```ruby
+JesusChrist.pray                 # Code, database, and anti-evil protection prayer
+JesusChrist.lords_prayer         # The Lord's Prayer (Matthew 6:9-13)
+JesusChrist.apostles_creed       # The Apostles' Creed
+JesusChrist.thanksgiving         # Jesus' thanksgiving prayers in the Gospels
+JesusChrist.prayers_on_the_cross # Jesus' three prayers from the cross
+JesusChrist.gethsemane           # The Prayer in Gethsemane (Matthew 26:39)
+JesusChrist.high_priestly_prayer # The High Priestly Prayer (John 17)
+JesusChrist.pray_all             # Run every prayer and blessing in sequence
+```
 
-## Contributing
+### Rails Auto-Startup
+Create `config/initializers/jesus_christ.rb`:
+```ruby
+JesusChrist.protect!
+JesusChrist.pray
+```
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/jesus_christ.
+## License
+
+The gem is available as open source under the terms of the [MIT License](https://opensource.org).
