@@ -48,6 +48,7 @@ JesusChrist.thanksgiving         # Jesus' thanksgiving prayers in the Gospels
 JesusChrist.prayers_on_the_cross # Jesus' three prayers from the cross
 JesusChrist.gethsemane           # The Prayer in Gethsemane (Matthew 26:39)
 JesusChrist.high_priestly_prayer # The High Priestly Prayer (John 17)
+JesusChrist.prayer_for_all_believers # Prayer for all believers
 JesusChrist.pray_all             # Run every prayer and blessing in sequence
 ```
 
