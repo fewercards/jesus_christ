@@ -27,16 +27,26 @@ gem install jesus_christ
 ## Usage
 
 ### Protection & Exception Handling
+
 ```ruby
 require "jesus_christ"
 
 # Print the protection banner
 JesusChrist.protect!
 
-# Wrap risky code blocks
+# Wrap risky production deploys, legacy migrations, or Friday afternoon hotfixes
 JesusChrist.take_the_wheel do
-  # risky operation
+  1 / 0
 end
+```
+
+**Sample Output:**
+```text
+✝️  This code is now under the protection of Jesus Christ.
+🙏 Jesus has taken the wheel...
+⚠️  Caught ZeroDivisionError: divided by 0
+🕊️  "Peace I leave with you; my peace I give you." (John 14:27)
+✅ Crisis averted. Carrying on in faith.
 ```
 
 ### Prayers & Blessings

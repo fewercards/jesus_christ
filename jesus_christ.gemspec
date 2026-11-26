@@ -16,6 +16,7 @@ Gem::Specification.new do |spec|
 
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
   spec.metadata["documentation_uri"] = "https://github.com/fewercards/jesus_christ/blob/main/README.md"
+  spec.metadata["source_code_uri"] = "https://github.com/fewercards/jesus_christ"
 
 
   spec.metadata["homepage_uri"]    = spec.homepage
