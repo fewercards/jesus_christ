@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = ["hello@fewer.cards"]
 
   spec.summary     = "This code is protected by Jesus Christ."
-  spec.description = "Provides prayers, scripture blessings, and spiritual protection helpers for Ruby and Rails. Usage: JesusChrist.help, JesusChrist.protect!, JesusChrist.pray, JesusChrist.lords_prayer, JesusChrist.apostles_creed, JesusChrist.pray_all."
+  spec.description = "Provides prayers, scripture blessings, and production-safe exception handling helpers (JesusChrist.take_the_wheel) for Ruby and Ruby on Rails applications—with zero runtime dependencies."
   spec.homepage    = "https://github.com/fewercards/jesus_christ"
   spec.license     = "MIT"
   spec.required_ruby_version = ">= 3.0.0"
