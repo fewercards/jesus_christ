@@ -10,12 +10,12 @@ Gem::Specification.new do |spec|
 
   spec.summary     = "This code is protected by Jesus Christ."
   spec.description = "Provides prayers, scripture blessings, and spiritual protection helpers for Ruby and Rails. Usage: JesusChrist.help, JesusChrist.protect!, JesusChrist.pray, JesusChrist.lords_prayer, JesusChrist.apostles_creed, JesusChrist.pray_all."
-  spec.homepage    = "https://fewer.cards"
+  spec.homepage    = "https://github.com/fewercards/jesus_christ"
   spec.license     = "MIT"
   spec.required_ruby_version = ">= 3.0.0"
 
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
-  # spec.metadata["documentation_uri"] = "https://rubydoc.info"
+  spec.metadata["documentation_uri"] = "https://github.com/fewercards/jesus_christ/blob/main/README.md"
 
 
   spec.metadata["homepage_uri"]    = spec.homepage
