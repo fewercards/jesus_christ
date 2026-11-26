@@ -33,21 +33,27 @@ require "jesus_christ"
 
 # Print the protection banner
 JesusChrist.protect!
+# => ✝ This code is now protected by Jesus Christ.
 
 # Wrap risky production deploys, legacy migrations, or Friday afternoon hotfixes
 JesusChrist.take_the_wheel do
   1 / 0
 end
+# => ✝ Exception caught (ZeroDivisionError: divided by 0) — forgiven and rescued.
+# => nil
 ```
 
-**Sample Output:**
+### Sample Output
 ```text
-✝️  This code is now under the protection of Jesus Christ.
-🙏 Jesus has taken the wheel...
-⚠️  Caught ZeroDivisionError: divided by 0
-🕊️  "Peace I leave with you; my peace I give you." (John 14:27)
-✅ Crisis averted. Carrying on in faith.
+✝ This code is now protected by Jesus Christ.
+✝ Exception caught (ZeroDivisionError: divided by 0) — forgiven and rescued.
+
+✝ Lord Jesus Christ, guard this codebase and every database table.
+Shield our migrations, backups, and queries from corruption or loss,
+and keep this application from ever being used for harm or evil.
+May every line of code serve truth and good works. Amen.
 ```
+
 
 ### Prayers & Blessings
 ```ruby
