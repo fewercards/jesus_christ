@@ -23,6 +23,7 @@ module JesusChrist
     prayers_on_the_cross
     gethsemane
     high_priestly_prayer
+    prayer_for_all_believers
   ].freeze
 
   def self.protect!
@@ -43,6 +44,14 @@ module JesusChrist
       and keep this application from ever being used for harm or evil.
       May every line of code serve truth and good works. Amen.
     PRAYER
+  end
+
+  def self.prayer_for_all_believers
+     puts <<~PRAYER
+      ✝ Lord Jesus Christ, Thank you for praying for us before you went to the cross, and for holding all who would believe in you close to your heart. Help us to live in the complete unity you asked the Father for—bound together in grace, truth, and purpose, just as you and the Father are one.
+Let our love for one another be a clear reflection of who you are, so that the world around us may come to know you and believe that the Father sent you. Dwell within us, fill us with the love the Father has for you, and keep us faithful until the day we are with you to see your glory face to face.
+Amen.
+     PRAYER
   end
 
   def self.lords_prayer
@@ -80,8 +89,8 @@ module JesusChrist
       and he will come to judge the living and the dead.
 
       I believe in the Holy Spirit,
-      the holy catholic Church,
-      the communion of saints,
+      the Holy Catholic Church,
+      the communion of Saints,
       the forgiveness of sins,
       the resurrection of the body,
       and the life everlasting. Amen.
@@ -174,6 +183,8 @@ module JesusChrist
         JesusChrist.prayers_on_the_cross # Prayers spoken on the cross
         JesusChrist.gethsemane           # The Prayer in Gethsemane
         JesusChrist.high_priestly_prayer # The High Priestly Prayer (John 17)
+        JesusChrist.prayer_for_all_believers # Prayer for all believers
+
         JesusChrist.pray_all             # Pray all prayers in sequence (alias: bless_all)
     HELP
   end

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jesus_christ (0.1.3)
+    jesus_christ (0.1.4)
 
 GEM
   remote: https://rubygems.org/
