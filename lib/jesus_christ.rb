@@ -25,17 +25,24 @@ module JesusChrist
     high_priestly_prayer
     prayer_for_all_believers
   ].freeze
-
+ 
   def self.protect!
     puts "✝ This code is now protected by Jesus Christ."
   end
 
-  def self.take_the_wheel
+
+  def self.take_the_wheel(fallback: nil, report: true, context: {})
     yield
   rescue StandardError => e
     puts "✝ Exception caught (#{e.class}: #{e.message}) — forgiven and rescued."
-    nil
+
+    if report && defined?(Rails) && Rails.respond_to?(:error)
+      Rails.error.report(e, handled: true, context: context)
+    end
+
+    fallback
   end
+
 
   def self.pray
     puts <<~PRAYER
@@ -47,7 +54,7 @@ module JesusChrist
   end
 
   def self.prayer_for_all_believers
-     puts <<~PRAYER
+    puts <<~PRAYER
       ✝ Lord Jesus Christ, Thank you for praying for us before you went to the cross, and for holding all who would believe in you close to your heart. Help us to live in the complete unity you asked the Father for—bound together in grace, truth, and purpose, just as you and the Father are one.
 Let our love for one another be a clear reflection of who you are, so that the world around us may come to know you and believe that the Father sent you. Dwell within us, fill us with the love the Father has for you, and keep us faithful until the day we are with you to see your glory face to face.
 Amen.
@@ -172,7 +179,7 @@ Amen.
 
       Protection & Helpers:
         JesusChrist.protect!             # Print the protection banner
-        JesusChrist.take_the_wheel { }   # Rescue and forgive StandardErrors in a block
+        JesusChrist.take_the_wheel { }   # Rescue StandardErrors, report to Rails.error, return fallback
         JesusChrist.help                 # Show this help message
 
       Prayers & Scripture:

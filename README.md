@@ -2,7 +2,7 @@
 
 > *"This code is protected by Jesus Christ."*
 
-Provides prayers, scripture blessings, and spiritual protection helpers for Ruby and Ruby on Rails applications.
+Provides prayers, scripture blessings, and production-safe exception handling helpers (`JesusChrist.take_the_wheel`) for Ruby and Ruby on Rails applications—with zero runtime dependencies.
 
 ## Installation
 
@@ -41,9 +41,16 @@ JesusChrist.take_the_wheel do
 end
 # => ✝ Exception caught (ZeroDivisionError: divided by 0) — forgiven and rescued.
 # => nil
+
+# Production-safe mode: return a fallback value and report to Rails.error (Sentry/Honeybadger)
+users = JesusChrist.take_the_wheel(fallback: [], context: { service: "billing" }) do
+  ExternalBillingApi.fetch_users
+end
+# => []
 ```
 
 ### Sample Output
+
 ```text
 ✝ This code is now protected by Jesus Christ.
 ✝ Exception caught (ZeroDivisionError: divided by 0) — forgiven and rescued.
@@ -54,22 +61,26 @@ and keep this application from ever being used for harm or evil.
 May every line of code serve truth and good works. Amen.
 ```
 
-
 ### Prayers & Blessings
+
 ```ruby
-JesusChrist.pray                 # Code, database, and anti-evil protection prayer
-JesusChrist.lords_prayer         # The Lord's Prayer (Matthew 6:9-13)
-JesusChrist.apostles_creed       # The Apostles' Creed
-JesusChrist.thanksgiving         # Jesus' thanksgiving prayers in the Gospels
-JesusChrist.prayers_on_the_cross # Jesus' three prayers from the cross
-JesusChrist.gethsemane           # The Prayer in Gethsemane (Matthew 26:39)
-JesusChrist.high_priestly_prayer # The High Priestly Prayer (John 17)
+JesusChrist.pray                     # Code, database, and anti-evil protection prayer
+JesusChrist.lords_prayer             # The Lord's Prayer (Matthew 6:9-13)
+JesusChrist.apostles_creed           # The Apostles' Creed
+JesusChrist.thanksgiving             # Jesus' thanksgiving prayers in the Gospels
+JesusChrist.prayers_on_the_cross     # Jesus' three prayers from the cross
+JesusChrist.gethsemane               # The Prayer in Gethsemane (Matthew 26:39)
+JesusChrist.high_priestly_prayer     # The High Priestly Prayer (John 17)
 JesusChrist.prayer_for_all_believers # Prayer for all believers
-JesusChrist.pray_all             # Run every prayer and blessing in sequence
+
+JesusChrist.pray_all                 # Run every prayer and blessing in sequence (alias: bless_all)
+JesusChrist.help                     # Print all available methods
 ```
 
 ### Rails Auto-Startup
+
 Create `config/initializers/jesus_christ.rb`:
+
 ```ruby
 JesusChrist.protect!
 JesusChrist.pray
